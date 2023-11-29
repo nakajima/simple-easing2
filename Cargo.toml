@@ -1,0 +1,14 @@
+[package]
+name = "simple-easing2"
+version = "1.0.1"
+description = "Set of simple easing functions"
+edition = "2021"
+repository = "https://github.com/zeozeozeo/simple-easing2"
+license = "MIT OR Apache-2.0"
+include = [
+	"/src/**/*",
+	"/README.md",
+	"/CHANGELOG.md",
+]
+
+[dependencies]
