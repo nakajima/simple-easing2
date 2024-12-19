@@ -1,14 +1,13 @@
 [package]
-name = "simple-easing2"
+name = "simpler-easing"
 version = "1.0.2"
-description = "Set of simple easing functions"
+description = "Set of simple easing functions (no_std compatible)"
 edition = "2021"
 repository = "https://github.com/zeozeozeo/simple-easing2"
 license = "MIT OR Apache-2.0"
-include = [
-	"/src/**/*",
-	"/README.md",
-	"/CHANGELOG.md",
-]
+include = ["/src/**/*", "/README.md", "/CHANGELOG.md"]
 
 [dependencies]
+num-traits = { version = "0.2.19", default-features = false, features = [
+  "libm",
+] }

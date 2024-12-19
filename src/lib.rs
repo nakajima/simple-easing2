@@ -18,8 +18,8 @@
 //! use simple_easing::linear;
 //! let easing: fn(f32) -> f32 = linear;
 //! assert_eq!(easing(1.0), 1.0);
-//! ```
 
+#![no_std]
 #![warn(clippy::pedantic, clippy::nursery)]
 mod back;
 mod bounce;

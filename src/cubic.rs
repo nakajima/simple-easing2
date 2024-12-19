@@ -1,19 +1,18 @@
+use num_traits::Float;
+
 /// <https://easings.net/#easeInCubic>
-#[must_use]
 #[inline(always)]
 pub fn cubic_in(t: f32) -> f32 {
     t * t * t
 }
 
 /// <https://easings.net/#easeOutCubic>
-#[must_use]
 #[inline(always)]
 pub fn cubic_out(t: f32) -> f32 {
     1.0 - (1.0 - t).powi(3)
 }
 
 /// <https://easings.net/#easeInOutCubic>
-#[must_use]
 #[inline(always)]
 pub fn cubic_in_out(t: f32) -> f32 {
     if t < 0.5 {

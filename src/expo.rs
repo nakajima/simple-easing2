@@ -1,6 +1,6 @@
+use num_traits::Float;
+
 /// <https://easings.net/#easeInExpo>
-#[must_use]
-#[inline(always)]
 pub fn expo_in(t: f32) -> f32 {
     if t <= 0.0 {
         0.0
@@ -10,8 +10,6 @@ pub fn expo_in(t: f32) -> f32 {
 }
 
 /// <https://easings.net/#easeOutExpo>
-#[must_use]
-#[inline(always)]
 pub fn expo_out(t: f32) -> f32 {
     if 1.0 <= t {
         1.0
@@ -21,8 +19,6 @@ pub fn expo_out(t: f32) -> f32 {
 }
 
 /// <https://easings.net/#easeInOutExpo>
-#[must_use]
-#[inline(always)]
 pub fn expo_in_out(t: f32) -> f32 {
     if t <= 0.0 {
         0.0

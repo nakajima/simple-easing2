@@ -1,11 +1,11 @@
-use std::f32::consts::PI;
+use core::f32::consts::PI;
+
+use num_traits::Float;
 
 const C4: f32 = (2.0 * PI) / 3.0;
 const C5: f32 = (2.0 * PI) / 4.5;
 
 /// <https://easings.net/#easeInElastic>
-#[must_use]
-#[inline(always)]
 pub fn elastic_in(t: f32) -> f32 {
     if t <= 0.0 {
         0.0
@@ -17,8 +17,6 @@ pub fn elastic_in(t: f32) -> f32 {
 }
 
 /// <https://easings.net/#easeOutElastic>
-#[must_use]
-#[inline(always)]
 pub fn elastic_out(t: f32) -> f32 {
     if t <= 0.0 {
         0.0
@@ -32,8 +30,6 @@ pub fn elastic_out(t: f32) -> f32 {
 }
 
 /// <https://easings.net/#easeInOutElastic>
-#[must_use]
-#[inline(always)]
 pub fn elastic_in_out(t: f32) -> f32 {
     if t <= 0.0 {
         0.0

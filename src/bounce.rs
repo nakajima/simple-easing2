@@ -1,12 +1,12 @@
+use num_traits::Float;
+
 /// <https://easings.net/#easeInBounce>
-#[must_use]
 #[inline(always)]
 pub fn bounce_in(t: f32) -> f32 {
     1.0 - bounce_out(1.0 - t)
 }
 
 /// <https://easings.net/#easeOutBounce>
-#[must_use]
 #[inline(always)]
 pub fn bounce_out(t: f32) -> f32 {
     const N1: f32 = 7.5625;
@@ -23,7 +23,6 @@ pub fn bounce_out(t: f32) -> f32 {
 }
 
 /// <https://easings.net/#easeInOutBounce>
-#[must_use]
 #[inline(always)]
 pub fn bounce_in_out(t: f32) -> f32 {
     if t < 0.5 {
